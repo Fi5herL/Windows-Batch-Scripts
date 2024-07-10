@@ -1,4 +1,4 @@
-# Windows-Backup-Batch-Script
+# bkup
 This is an easy Batch Script for backup files and version control.
 
 Guide: 
