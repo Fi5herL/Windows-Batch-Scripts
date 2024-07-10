@@ -1,4 +1,4 @@
-# bkup
+# bkup.bat
 This is an easy Batch Script for backup files and version control.
 
 Guide: 
