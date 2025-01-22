@@ -1,0 +1,32 @@
+REM PDF file name as the parents folder name.
+
+@echo off
+setlocal enabledelayedexpansion
+
+REM 遍歷所有資料夾
+for /d %%a in (*) do (
+    cd "%%a"
+    
+    REM 獲取資料夾名稱
+    set "folderName=%%~nxa"
+    
+    REM 紀錄檔案後綴數
+    set count=1
+    
+    REM 遍歷資料夾內的檔案
+    for %%b in (*) do (
+        REM 獲取檔案名稱
+        set "fileName=%%~nb"
+        set "fileExt=%%~xb"
+        
+        REM 重新命名檔案
+        ren "%%b" "!folderName!-!count!!fileExt!"
+        
+        REM 檔案後綴數+1
+        set /a count+=1
+    )
+    
+    cd ..
+)
+
+endlocal
