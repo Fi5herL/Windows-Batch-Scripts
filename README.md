@@ -12,3 +12,8 @@ Guide:
 1. Func1: Extra all zip file in current folder.
 2. Func1: Move all file from the sub folder to current folder.
 3. Func1: Delete all empty folders
+
+# NamingFileAsFolder
+
+1. move to parant of target folders
+2. click. done!
